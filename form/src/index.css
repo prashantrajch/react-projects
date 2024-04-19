@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #023047;
+  color: white
+}
+
+h1{
+  text-align: center;
+}
+
+.inputField{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputCheckbox{
+  display: flex;
+  gap: 5px;
+}
+
+.inputCheckbox label{
+  order: 1;
+}
+
+.inputField input,select,textarea{
+  padding: 8px 12px;
+  margin-top: 5px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.col{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+input[type='file']{
+  margin-left: 20px;
+}
+
+.red,.error{
+  color: red;
+}
+.error{
+  font-size: 15px;
+  margin: 3px 0;
+}
+
+.btns{
+  display: flex;
+  gap: 20px;
+}
+
+.btn{
+  flex: 1;
+  font-size: 18px;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background-color: blue;
+  color: #fff;
+}
+
+.btn-secondary{
+  background-color: red;
+  color: #fff;
+}
+.showPassword{
+  position: absolute;
+  transform: translateX(-50%);
+  top: 8px;
+  right: -5px;
+  color: blue;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 25px;
+  height: 75%;
+}
+
+input[name='password'],input[name='cnfPassword']{
+  padding-right: 30px;
+}
+
+.card{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.card-body{
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 765px) {
+  .container{
+    width: 100%;
+  }
+  .showPassword{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    flex-direction: column;
+  }
+}
