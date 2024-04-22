@@ -20,7 +20,7 @@ function Recommended({categoryId}) {
   return (
     <div className='recommended'>
         {
-            apiData.map((item,index) =>
+        apiData.map((item,index) =>
         <Link to={`/video/${item.snippet.categoryId}/${item.id}`} key={index} className="side-video-list">
             <img src={item.snippet.thumbnails.medium.url} alt="" />
             <div className="video-info">

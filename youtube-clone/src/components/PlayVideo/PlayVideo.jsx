@@ -45,7 +45,7 @@ function PlayVideo() {
  },[videoId])
 
  useEffect(() => {
-  fetchChannelData();
+    fetchChannelData();
  },[apiData])
 
   return (
