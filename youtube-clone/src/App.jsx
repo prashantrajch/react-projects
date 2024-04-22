@@ -8,8 +8,6 @@ function App() {
 
   const [sidebar,setSidebar] = useState(true);
 
-  console.log(sidebar)
-
   return (
     <div>
       <Navbar setSidebar={setSidebar} />

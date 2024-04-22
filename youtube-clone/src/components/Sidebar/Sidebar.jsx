@@ -9,11 +9,11 @@ import tech from "../../assets/tech.png";
 import music from "../../assets/music.png";
 import blogs from "../../assets/blogs.png";
 import news from "../../assets/news.png";
-import jack from "../../assets/jack.png";
-import simon from "../../assets/simon.png";
-import tom from "../../assets/tom.png";
-import megan from "../../assets/megan.png";
-import cameron from "../../assets/cameron.png";
+import Prashant_Raj from "../../assets/Prashant_Raj.png";
+// import simon from "../../assets/simon.png";
+// import tom from "../../assets/tom.png";
+// import megan from "../../assets/megan.png";
+// import cameron from "../../assets/cameron.png";
 
 function Sidebar({sidebar,category,setCategory}) {
   return (
@@ -51,9 +51,9 @@ function Sidebar({sidebar,category,setCategory}) {
       <div className="subscribed-list">
         <h3>Subscribed</h3>
         <div className="side-link">
-          <img src={jack} alt="" /> <p>PweDiePie</p>
+          <img src={Prashant_Raj} alt="" /> <p>Prashant Raj</p>
         </div>
-        <div className="side-link">
+        {/* <div className="side-link">
           <img src={simon} alt="" /> <p>MrBeast</p>
         </div>
         <div className="side-link">
@@ -64,7 +64,7 @@ function Sidebar({sidebar,category,setCategory}) {
         </div>
         <div className="side-link">
           <img src={cameron} alt="" /> <p>Nas Daily</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
