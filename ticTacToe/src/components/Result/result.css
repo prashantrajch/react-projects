@@ -1,0 +1,25 @@
+
+.result{
+    text-align: center;
+}
+
+
+.result button{
+    margin-top: 20px;
+    width: 130px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #074799;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.result button:hover{
+    background: #001A8f;
+    transform: scale(0.95);
+}
+

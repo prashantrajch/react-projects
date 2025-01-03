@@ -1,0 +1,82 @@
+.playBoard {
+  width: 300px;
+}
+
+.playBoard .player-details {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.dark-mode .player-details{
+  background-color: #1e1e1e;
+}
+
+
+
+.playBoard .player-details .players {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.playBoard .player-details .players span {
+  width: 100%;
+  padding: 7px 0;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  cursor: default;
+  color: #001a6e;
+  position: relative;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .player-details .players span{
+  color: #fff;
+}
+
+.playBoard .player-details .players span.active {
+  color: #fff;
+}
+
+.playBoard .player-details .players .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #001a6e;
+  border-radius: 5px;
+  /* z-index: 4; */
+  transition: all 0.3s ease;
+}
+
+.playArea {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.playArea .box {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 36px;
+  font-weight: 500;
+  color: #001a6e;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .playArea .box{
+  background-color: #1e1e1e;
+  color: #fff;
+}

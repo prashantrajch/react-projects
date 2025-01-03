@@ -1,0 +1,30 @@
+.selectBox{
+    background-color: #fff;
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+}
+
+
+.selectBox .options{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.selectBox .options button{
+    width: 130px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #074799;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.selectBox .options button:hover{
+    background: #001A8f;
+    transform: scale(0.95);
+}
