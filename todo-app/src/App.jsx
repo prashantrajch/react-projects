@@ -4,8 +4,6 @@ import TodoItems from "./components/TodoItem";
 import { v4 as uuidv4 } from "uuid";
 
 function getLocalStorage() {
-  console.log("im run get local storage");
-
   let todos = localStorage.getItem("todos");
   if (todos && todos.length > 0) {
     return JSON.parse(localStorage.getItem("todos"));
