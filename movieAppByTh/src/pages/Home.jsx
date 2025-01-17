@@ -3,10 +3,10 @@ import Movies from "../components/movies/Movies";
 
 const Home = () => {
   return (
-    <>
+    <div className="container">
       <Search />
       <Movies />
-    </>
+    </div>
   );
 };
 

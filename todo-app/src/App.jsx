@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 function getLocalStorage() {
   let todos = localStorage.getItem("todos");
   if (todos && todos.length > 0) {
-    return JSON.parse(localStorage.getItem("todos"));
+    return JSON.parse(todos);
   } else {
     return [];
   }
@@ -45,6 +45,7 @@ function App() {
       prevTodo.map((todo) => (todo.id == id ? filterTodo : todo))
     );
   }
+  
   function handleEditTodo(id) {
     let newTodo = todos.find((todo) => todo.id == id);
     setValue(newTodo.todo);
