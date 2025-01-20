@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 300px;
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    border-radius: 5px;
+}
+
+.container input{
+    font-size: 18px;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.container .btn{
+    background-color: royalblue;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+

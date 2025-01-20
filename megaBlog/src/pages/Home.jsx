@@ -5,7 +5,9 @@ import { useSelector } from "react-redux";
 
 function Home() {
   const [posts, setPosts] = useState([]);
+  
   const authStatus = useSelector((state) => state.auth.status)
+
   useEffect(() => {
     service.getPosts().then((posts) => {
       if (posts) {
