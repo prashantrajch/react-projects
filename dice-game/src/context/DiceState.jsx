@@ -32,7 +32,6 @@ export default function DiceState({ children }) {
 
     setTimeout(() => {
       clearTimeout(control);
-      console.log(selectedNumber, randomNumber);
       if (selectedNumber == randomNumber) {
         setTotalScore((prev) => prev + randomNumber);
       } else setTotalScore((prev) => prev - 2);

@@ -48,7 +48,7 @@ export default function Form({ formData }) {
   }
 
   function handleReset() {
-    console.log("i am reset button clicked")
+    
     setForm({
       fName: "",
       lName: "",
